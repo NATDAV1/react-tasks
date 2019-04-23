@@ -1,0 +1,53 @@
+.board {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    background: rgb(124, 23, 6);
+    flex: 1;
+
+}
+::placeholder{
+    font-weight: 100;
+    color:rgb(107, 102, 102);
+  }
+.tasks {
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+header {
+    background: #ce9e62;
+    padding: 2em;
+    
+
+    > input {
+        all: unset;
+        color: white;
+        font-weight: 500;
+        border-bottom: 1px solid white;
+        padding: 0.5em;
+        text-align: center;
+    }
+    button:not(#NavLink, Link) {
+        background-color:  rgb(124, 23, 6);
+        border: none;
+        color: white;
+        padding: 9px 15px;
+        border-radius: 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        #NavLink, Link {
+            background-color: #ce9e62;
+        }
+        
+    }
+}
+
